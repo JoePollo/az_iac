@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/pulumi/pulumi-azure-native-sdk/app"
-	"github.com/pulumi/pulumi-azure-native-sdk/resources"
-	"github.com/pulumi/pulumi-azure-native-sdk/storage"
+	app "github.com/pulumi/pulumi-azure-native-sdk/app/v2"
+	resources "github.com/pulumi/pulumi-azure-native-sdk/resources/v2"
+	storage "github.com/pulumi/pulumi-azure-native-sdk/storage/v2"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 )
 
@@ -53,8 +53,9 @@ func main() {
 			EnvironmentId:     containerAppEnvironment.ID(),
 			Configuration: &app.ConfigurationArgs{
 				Ingress: &app.IngressArgs{
-					External:   pulumi.Bool(true),
-					TargetPort: pulumi.Int(80),
+					External:      pulumi.Bool(true),
+					TargetPort:    pulumi.Int(80),
+					AllowInsecure: pulumi.Bool(false),
 				},
 			},
 			Template: &app.TemplateArgs{
@@ -64,6 +65,7 @@ func main() {
 						Image: pulumi.String("mcr.microsoft.com/azuredocs/containerapps-helloworld:latest"),
 					},
 				},
+				RevisionSuffix: pulumi.String("supercoolrevision"),
 			},
 		})
 		if err != nil {
