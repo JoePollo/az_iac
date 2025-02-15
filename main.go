@@ -1,10 +1,32 @@
 package main
 
 import (
+	"crypto/rand"
+	"encoding/base64"
+	"fmt"
+	"os"
+
+	keyvault "github.com/pulumi/pulumi-azure-native-sdk/keyvault/v2"
+	resources "github.com/pulumi/pulumi-azure-native-sdk/resources/v2"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 )
 
+func generateSecretValue(length int) (string, error) {
+	bytes := make([]byte, length)
+	if _, err := rand.Read(bytes); err != nil {
+		return "", err
+	}
+	return base64.StdEncoding.EncodeToString(bytes), nil
+}
+
 func main() {
+	Env := os.Getenv("ENV")
+	KeyVaultName := fmt.Sprintf("kv-yym-%s-usce1", Env)
+	CoolSecret, err := generateSecretValue(16)
+	if err != nil {
+		return
+	}
+
 	// github.com/pulumi/pulumi-azuread/sdk/v6/go/azuread
 	pulumi.Run(func(context *pulumi.Context) error {
 		// appReg, err := azuread.NewApplication(context, "az204AppReg", &azuread.ApplicationArgs{
@@ -28,10 +50,10 @@ func main() {
 
 		// Create an Azure Resource Group
 		// "github.com/pulumi/pulumi-azure-native-sdk/resources/v2"
-		// resourceGroup, err := resources.NewResourceGroup(context, "resourceGroup", nil)
-		// if err != nil {
-		// 	return err
-		// }
+		resourceGroup, err := resources.NewResourceGroup(context, "resourceGroup", nil)
+		if err != nil {
+			return err
+		}
 
 		// This is an immutable value of resourceGroup.Location.
 		// A pointer would cause this value to be able to change the
@@ -112,6 +134,26 @@ func main() {
 
 		// // Export the Fully Qualified Domain Name of the Container App
 		// context.Export("FQDN", containerApp.LatestRevisionFqdn)
+
+		keyVault, err := keyvault.NewVault(context, KeyVaultName, &keyvault.VaultArgs{
+			Location:          resourceGroup.Location,
+			ResourceGroupName: resourceGroup.Name,
+			VaultName:         pulumi.String(KeyVaultName),
+		})
+		if err != nil {
+			return err
+		}
+
+		_, err = keyvault.NewSecret(context, "superCoolSecret", &keyvault.SecretArgs{
+			VaultName:  keyVault.Name,
+			SecretName: pulumi.String("superCoolSecret"),
+			Properties: keyvault.SecretPropertiesArgs{
+				Value: pulumi.String(CoolSecret),
+			},
+		}, pulumi.IgnoreChanges([]string{"properties.value"}))
+		if err != nil {
+			return err
+		}
 
 		return nil
 	})

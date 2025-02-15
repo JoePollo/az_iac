@@ -150,12 +150,16 @@ github.com/pulumi/appdash v0.0.0-20231130102222-75f619a67231 h1:vkHw5I/plNdTr435
 github.com/pulumi/appdash v0.0.0-20231130102222-75f619a67231/go.mod h1:murToZ2N9hNJzewjHBgfFdXhZKjY3z5cYC1VXk+lbFE=
 github.com/pulumi/esc v0.11.1 h1:Ky07sE4lQmB6Ve2A3M3g+i0Y2No4nRVbDaCjTccuLII=
 github.com/pulumi/esc v0.11.1/go.mod h1:iCs5bP1xvleSzcMDwfNc1Ym/6EJ2P6xmrjy0iqb0ATs=
+github.com/pulumi/pulumi-azure-native-sdk/keyvault/v2 v2.88.0 h1:+74wxHbTg4RVDNy8oaKNuxVaYeKpXkNHaokkpHkiTTk=
+github.com/pulumi/pulumi-azure-native-sdk/keyvault/v2 v2.88.0/go.mod h1:InZSCqT4kguPPTmHZDm+duxpjY2uUgB4KZCgbxhXDzM=
 github.com/pulumi/pulumi-azure-native-sdk/managedidentity/v2 v2.87.0 h1:Q9CR0HlrXsfGQZZ4Wn7vm6flY3MXtQ1cLiNfp1AJ3ZI=
 github.com/pulumi/pulumi-azure-native-sdk/managedidentity/v2 v2.87.0/go.mod h1:+Q3vVFPbgApVQQ1ZF6CImMUIj64RlbMPQnww93uryEA=
 github.com/pulumi/pulumi-azure-native-sdk/resources/v2 v2.87.0 h1:b3JEVP3LdW1Dx7UUxR982llefj0JjAz2+i7pfgZ2R1Q=
 github.com/pulumi/pulumi-azure-native-sdk/resources/v2 v2.87.0/go.mod h1:RB/+0TEHsOtEc/rxBSEOaz4K/V+dROzFDRuLPqPbu1Q=
 github.com/pulumi/pulumi-azure-native-sdk/v2 v2.87.0 h1:Ckv6511eV7BcQw2OMEhiceUIpVn+eNZaTUxs84sGNLI=
 github.com/pulumi/pulumi-azure-native-sdk/v2 v2.87.0/go.mod h1:BihkAs9RoBunU6EFKdEmWduWz+dIcSiOh3XGTL7JwR4=
+github.com/pulumi/pulumi-azure-native-sdk/v2 v2.88.0 h1:tLgRGAZz8ZUFzBvjI35XHSd/ms0wtfrSiOjBYer1MLw=
+github.com/pulumi/pulumi-azure-native-sdk/v2 v2.88.0/go.mod h1:uyp/HcB8Iv0gZHmQw3YLtcbheJN8OmrqhaQFfU+9BjA=
 github.com/pulumi/pulumi-azuread/sdk/v6 v6.2.0 h1:QU3Vi8OtgpaPf3NMCauYOjstaWL7uh+nrt/LtokIw3E=
 github.com/pulumi/pulumi-azuread/sdk/v6 v6.2.0/go.mod h1:nP7hVmMwak4O4NiZCsbotjWXfQsIVkRTSIoXEpaDp/Q=
 github.com/pulumi/pulumi/sdk/v3 v3.150.0 h1:w5df9oOxqmVfsokWNb901/AvJEFjgBGrG9rgsWFlsJI=
