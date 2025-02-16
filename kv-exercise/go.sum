@@ -150,6 +150,8 @@ github.com/pulumi/appdash v0.0.0-20231130102222-75f619a67231 h1:vkHw5I/plNdTr435
 github.com/pulumi/appdash v0.0.0-20231130102222-75f619a67231/go.mod h1:murToZ2N9hNJzewjHBgfFdXhZKjY3z5cYC1VXk+lbFE=
 github.com/pulumi/esc v0.11.1 h1:Ky07sE4lQmB6Ve2A3M3g+i0Y2No4nRVbDaCjTccuLII=
 github.com/pulumi/esc v0.11.1/go.mod h1:iCs5bP1xvleSzcMDwfNc1Ym/6EJ2P6xmrjy0iqb0ATs=
+github.com/pulumi/pulumi-azure-native-sdk/authorization/v2 v2.88.0 h1:xIb656wq0o/gOLel90Bj/3tRxwq+U+3RaktlNnHvTG4=
+github.com/pulumi/pulumi-azure-native-sdk/authorization/v2 v2.88.0/go.mod h1:DnvaZlI1YwSZhIKfPPsXq6Koy1XoOkgGwOorcZeIj0k=
 github.com/pulumi/pulumi-azure-native-sdk/keyvault/v2 v2.88.0 h1:+74wxHbTg4RVDNy8oaKNuxVaYeKpXkNHaokkpHkiTTk=
 github.com/pulumi/pulumi-azure-native-sdk/keyvault/v2 v2.88.0/go.mod h1:InZSCqT4kguPPTmHZDm+duxpjY2uUgB4KZCgbxhXDzM=
 github.com/pulumi/pulumi-azure-native-sdk/managedidentity/v2 v2.87.0 h1:Q9CR0HlrXsfGQZZ4Wn7vm6flY3MXtQ1cLiNfp1AJ3ZI=

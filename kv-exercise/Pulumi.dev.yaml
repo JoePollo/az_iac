@@ -1,3 +1,5 @@
 encryptionsalt: v1:CLvWjPLu0rE=:v1:T86Q01SnRhKALkgp:S6IN+okDfvA6OnWxz3LUDSm/wigRaA==
 config:
   azure-native:location: CentralUS
+  # azure-native:subscriptionId: ${azure.login.subscriptionId}
+  # azure-native:tenantId: ${azure.login.tenantId}
