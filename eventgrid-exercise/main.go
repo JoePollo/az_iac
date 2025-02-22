@@ -41,13 +41,25 @@ func main() {
 			return ErrorHandler("NewResourceGroup", err)
 		}
 
-		_, err = event.NewTopic(context, fmt.Sprintf("tpc-yym-%s-usce1", Env), &event.TopicArgs{
+		topic, err := event.NewTopic(context, fmt.Sprintf("tpc-yym-%s-usce1", Env), &event.TopicArgs{
 			ResourceGroupName: resourceGroup.Name,
 		})
 		if err != nil {
 			return ErrorHandler("NewTopic", err)
 		}
 
+		deployment, err := resources.NewDeployment(
+			fmt.Sprintf("dep-yym-%s-usce", Env),
+			&resources.DeploymentArgs{
+				DeploymentName: pulumi.String(fmt.Sprintf("dep-yym-%s-usce", Env)),
+				Properties: resources.DeploymentPropertiesArgs{
+					Mode: resources.DeploymentModeComplete,
+					Template: &resources.TemplateLinkArgs{
+						Uri: pulumi.String("https://raw.githubusercontent.com/Azure-Samples/azure-event-grid-viewer/main/azuredeploy.json"),
+					},
+				},
+			},
+		)
 		return nil
 	})
 }
