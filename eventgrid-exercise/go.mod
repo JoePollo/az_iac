@@ -5,7 +5,6 @@ go 1.22
 toolchain go1.23.4
 
 require (
-	github.com/pulumi/pulumi-azure-native-sdk/apicenter/v2 v2.88.0
 	github.com/pulumi/pulumi-azure-native-sdk/resources/v2 v2.42.1
 	github.com/pulumi/pulumi/sdk/v3 v3.150.0
 )

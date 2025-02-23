@@ -12,6 +12,7 @@ import (
 	"os"
 
 	auth "github.com/pulumi/pulumi-azure-native-sdk/authorization/v2"
+	"github.com/pulumi/pulumi-azure-native-sdk/eventgrid/v2"
 	event "github.com/pulumi/pulumi-azure-native-sdk/eventgrid/v2"
 	"github.com/pulumi/pulumi-azure-native-sdk/resources/v2"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
@@ -41,6 +42,8 @@ func main() {
 			return ErrorHandler("NewResourceGroup", err)
 		}
 
+		siteName := "yymsupercoolsite"
+
 		topic, err := event.NewTopic(context, fmt.Sprintf("tpc-yym-%s-usce1", Env), &event.TopicArgs{
 			ResourceGroupName: resourceGroup.Name,
 		})
@@ -48,18 +51,47 @@ func main() {
 			return ErrorHandler("NewTopic", err)
 		}
 
-		deployment, err := resources.NewDeployment(
+		_, err = resources.NewDeployment(
+			context,
 			fmt.Sprintf("dep-yym-%s-usce", Env),
 			&resources.DeploymentArgs{
 				DeploymentName: pulumi.String(fmt.Sprintf("dep-yym-%s-usce", Env)),
 				Properties: resources.DeploymentPropertiesArgs{
 					Mode: resources.DeploymentModeComplete,
-					Template: &resources.TemplateLinkArgs{
+					TemplateLink: &resources.TemplateLinkArgs{
 						Uri: pulumi.String("https://raw.githubusercontent.com/Azure-Samples/azure-event-grid-viewer/main/azuredeploy.json"),
 					},
+					Parameters: resources.DeploymentParameterMap{
+						"siteName": resources.DeploymentParameterArgs{
+							Value: pulumi.String(fmt.Sprintf("YYMSuperCoolSite%s", Env)),
+						}.ToDeploymentParameterOutput(),
+						"hostingPlanName": resources.DeploymentParameterArgs{
+							Value: pulumi.String(siteName),
+						}.ToDeploymentParameterOutput(),
+					},
 				},
+				ResourceGroupName: pulumi.String(ResourceGroupName),
 			},
 		)
+		if err != nil {
+			return ErrorHandler("NewDeployment", err)
+		}
+
+		_, err = eventgrid.NewEventSubscription(
+			context,
+			fmt.Sprintf("es-yym-%s-usce", Env),
+			&event.EventSubscriptionArgs{
+				Destination: eventgrid.EventHubEventSubscriptionDestinationArgs{
+					EndpointType: pulumi.String("WebHook"),
+					ResourceId:   topic.ID(),
+				},
+				Scope: pulumi.StringOutput(topic.Endpoint),
+			},
+		)
+		if err != nil {
+			return ErrorHandler("NewEventSubscription", err)
+		}
+
 		return nil
 	})
 }

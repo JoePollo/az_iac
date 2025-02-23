@@ -1,0 +1,75 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/eventgrid-exercise/dev",
+        "latest": {
+            "manifest": {
+                "time": "2025-02-23T11:58:27.435449156-06:00",
+                "magic": "e6f9b63eec1c02224f3d9bb9346dbfaeb256b3b4d71dc3ee7581d37b584369c2",
+                "version": "v3.152.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:uGwdkyMdjbI=:v1:J3d70EQK0klZmKqE:IpQ6dOl5Rp7sPzolf4p3yzLQclO2CA=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::eventgrid-exercise::pulumi:pulumi:Stack::eventgrid-exercise-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2025-02-23T17:58:23.69633237Z",
+                    "modified": "2025-02-23T17:58:23.69633237Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::eventgrid-exercise::pulumi:providers:azure-native::default_2_88_0",
+                    "custom": true,
+                    "id": "0caabdfb-c61e-460e-9e16-0d0ee786d334",
+                    "type": "pulumi:providers:azure-native",
+                    "inputs": {
+                        "__internal": {},
+                        "version": "2.88.0"
+                    },
+                    "outputs": {
+                        "version": "2.88.0"
+                    },
+                    "created": "2025-02-23T17:58:23.698360147Z",
+                    "modified": "2025-02-23T17:58:23.698360147Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::eventgrid-exercise::azure-native:resources:ResourceGroup::rg-yym--usce1",
+                    "custom": true,
+                    "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1",
+                    "type": "azure-native:resources:ResourceGroup",
+                    "inputs": {
+                        "location": "centralus",
+                        "resourceGroupName": "rg-yym--usce1"
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:UUgGf30etOI402Lt:4MYnKJSr7wdusDbQq/f07OjOWlQv4xLXsEkweVcJyX/WJfr3Xffu9RPNsUIaRXg9ULbP5mNHlS5xj5XsBDyPhbpAuLs4LiCcZXGFcg=="
+                        },
+                        "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1",
+                        "location": "centralus",
+                        "name": "rg-yym--usce1",
+                        "properties": {
+                            "provisioningState": "Succeeded"
+                        },
+                        "type": "Microsoft.Resources/resourceGroups"
+                    },
+                    "parent": "urn:pulumi:dev::eventgrid-exercise::pulumi:pulumi:Stack::eventgrid-exercise-dev",
+                    "provider": "urn:pulumi:dev::eventgrid-exercise::pulumi:providers:azure-native::default_2_88_0::0caabdfb-c61e-460e-9e16-0d0ee786d334",
+                    "propertyDependencies": {
+                        "location": [],
+                        "resourceGroupName": []
+                    },
+                    "created": "2025-02-23T17:58:27.430452451Z",
+                    "modified": "2025-02-23T17:58:27.430452451Z"
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}
