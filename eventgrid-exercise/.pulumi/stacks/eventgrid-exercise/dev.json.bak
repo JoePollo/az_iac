@@ -4,7 +4,7 @@
         "stack": "organization/eventgrid-exercise/dev",
         "latest": {
             "manifest": {
-                "time": "2025-02-23T12:53:03.703256004-06:00",
+                "time": "2025-02-23T12:55:33.443536848-06:00",
                 "magic": "e6f9b63eec1c02224f3d9bb9346dbfaeb256b3b4d71dc3ee7581d37b584369c2",
                 "version": "v3.152.0"
             },
@@ -15,13 +15,6 @@
                 }
             },
             "resources": [
-                {
-                    "urn": "urn:pulumi:dev::eventgrid-exercise::pulumi:pulumi:Stack::eventgrid-exercise-dev",
-                    "custom": false,
-                    "type": "pulumi:pulumi:Stack",
-                    "created": "2025-02-23T17:58:23.69633237Z",
-                    "modified": "2025-02-23T17:58:23.69633237Z"
-                },
                 {
                     "urn": "urn:pulumi:dev::eventgrid-exercise::pulumi:providers:azure-native::default_2_88_0",
                     "custom": true,
@@ -36,219 +29,26 @@
                     },
                     "created": "2025-02-23T17:58:23.698360147Z",
                     "modified": "2025-02-23T17:58:23.698360147Z"
-                },
+                }
+            ],
+            "pending_operations": [
                 {
-                    "urn": "urn:pulumi:dev::eventgrid-exercise::azure-native:resources:ResourceGroup::rg-yym--usce1",
-                    "custom": true,
-                    "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1",
-                    "type": "azure-native:resources:ResourceGroup",
-                    "inputs": {
-                        "location": "centralus",
-                        "resourceGroupName": "rg-yym--usce1"
-                    },
-                    "outputs": {
-                        "__inputs": {
-                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
-                            "ciphertext": "v1:w84zNsQf8oVQRiMf:7OUVEwhd+Edct1cyFCllSmpXGCGLYSPunPW5FTknG0+RMsMCQ3Q2R7aAAtfc0YaVE9/aq+H/cKJqVCYk1bAwtAmdl0P1yfdrpcgwVg=="
+                    "resource": {
+                        "urn": "urn:pulumi:dev::eventgrid-exercise::pulumi:providers:azure-native::default_2_88_0",
+                        "custom": true,
+                        "id": "0caabdfb-c61e-460e-9e16-0d0ee786d334",
+                        "type": "pulumi:providers:azure-native",
+                        "inputs": {
+                            "__internal": {},
+                            "version": "2.88.0"
                         },
-                        "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1",
-                        "location": "centralus",
-                        "name": "rg-yym--usce1",
-                        "properties": {
-                            "provisioningState": "Succeeded"
+                        "outputs": {
+                            "version": "2.88.0"
                         },
-                        "type": "Microsoft.Resources/resourceGroups"
+                        "created": "2025-02-23T17:58:23.698360147Z",
+                        "modified": "2025-02-23T17:58:23.698360147Z"
                     },
-                    "parent": "urn:pulumi:dev::eventgrid-exercise::pulumi:pulumi:Stack::eventgrid-exercise-dev",
-                    "provider": "urn:pulumi:dev::eventgrid-exercise::pulumi:providers:azure-native::default_2_88_0::0caabdfb-c61e-460e-9e16-0d0ee786d334",
-                    "propertyDependencies": {
-                        "location": [],
-                        "resourceGroupName": []
-                    },
-                    "created": "2025-02-23T17:58:27.430452451Z",
-                    "modified": "2025-02-23T17:58:27.430452451Z"
-                },
-                {
-                    "urn": "urn:pulumi:dev::eventgrid-exercise::azure-native:eventgrid:Topic::tpc-yym--usce1",
-                    "custom": true,
-                    "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1/providers/Microsoft.EventGrid/topics/tpc-yym--usce1316ef2a2",
-                    "type": "azure-native:eventgrid:Topic",
-                    "inputs": {
-                        "__createBeforeDelete": true,
-                        "disableLocalAuth": false,
-                        "inputSchema": "EventGridSchema",
-                        "location": "centralus",
-                        "publicNetworkAccess": "Enabled",
-                        "resourceGroupName": "rg-yym--usce1",
-                        "topicName": "tpc-yym--usce1316ef2a2"
-                    },
-                    "outputs": {
-                        "__inputs": {
-                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
-                            "ciphertext": "v1:9ziDd5d/BFrAigxl:bWdxE0ak7BISq1w7U2LQXss8xTQF1O/utbFtYm9jF5k5QrKbnlz4aL1JO9CJVduFYWhd3Mf9rYbYwb4K38NaFJMPcyKNRcrBfIQ1ac9IPvh/lejLO9cNkKIsm802Ra6lRS/pGSB1fuPQN+SjzFHJnYprVpWSPg3ViQCe7eX/Gz1JGC0HO+BO0fj82rciGSPFSrlTISJEWgeMQJ08vNlzTkvRGSWZ7xlFTmBNRCc1Nm1JByaARR6+Go8arl1/D8PUHOkP9125M47mAXVjgC9ojZotEwH0PNYgPNE3zQBqA+L/QkQDVE8="
-                        },
-                        "dataResidencyBoundary": "WithinGeopair",
-                        "disableLocalAuth": false,
-                        "endpoint": "https://tpc-yym--usce1316ef2a2.centralus-1.eventgrid.azure.net/api/events",
-                        "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1/providers/Microsoft.EventGrid/topics/tpc-yym--usce1316ef2a2",
-                        "inputSchema": "EventGridSchema",
-                        "location": "centralus",
-                        "metricResourceId": "c9361d58-cdc8-4355-9ef6-a4e49e926a9c",
-                        "name": "tpc-yym--usce1316ef2a2",
-                        "provisioningState": "Succeeded",
-                        "publicNetworkAccess": "Enabled",
-                        "type": "Microsoft.EventGrid/topics"
-                    },
-                    "parent": "urn:pulumi:dev::eventgrid-exercise::pulumi:pulumi:Stack::eventgrid-exercise-dev",
-                    "dependencies": [
-                        "urn:pulumi:dev::eventgrid-exercise::azure-native:resources:ResourceGroup::rg-yym--usce1"
-                    ],
-                    "provider": "urn:pulumi:dev::eventgrid-exercise::pulumi:providers:azure-native::default_2_88_0::0caabdfb-c61e-460e-9e16-0d0ee786d334",
-                    "propertyDependencies": {
-                        "disableLocalAuth": [],
-                        "inputSchema": [],
-                        "publicNetworkAccess": [],
-                        "resourceGroupName": [
-                            "urn:pulumi:dev::eventgrid-exercise::azure-native:resources:ResourceGroup::rg-yym--usce1"
-                        ]
-                    },
-                    "created": "2025-02-23T18:01:36.085995928Z",
-                    "modified": "2025-02-23T18:01:36.085995928Z"
-                },
-                {
-                    "urn": "urn:pulumi:dev::eventgrid-exercise::azure-native:resources:Deployment::dep-yym--usce",
-                    "custom": true,
-                    "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1/providers/Microsoft.Resources/deployments/dep-yym--usce",
-                    "type": "azure-native:resources:Deployment",
-                    "inputs": {
-                        "deploymentName": "dep-yym--usce",
-                        "properties": {
-                            "mode": "Complete",
-                            "parameters": {
-                                "hostingPlanName": {
-                                    "value": "YYMSuperCoolSiteHost"
-                                },
-                                "siteName": {
-                                    "value": "YYMSuperCoolSite"
-                                }
-                            },
-                            "templateLink": {
-                                "uri": "https://raw.githubusercontent.com/Azure-Samples/azure-event-grid-viewer/main/azuredeploy.json"
-                            }
-                        },
-                        "resourceGroupName": "rg-yym--usce1"
-                    },
-                    "outputs": {
-                        "__inputs": {
-                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
-                            "ciphertext": "v1:iaTC10XD0/0BKx95:dtTYPWF5VmYlo/WFKZGnfYFzKSutyx7GZ9MyGzuiBWBoXgfZgszdW60wsy6tB2bRxQ5UVcm8o4LHNAyEY3Mqt+FZY7ZgcOxkKk+r3BzM6DwGW1mY2PMFMGZwHuepjNGi6loA011ioQpQ8ZHIxIj8cnDBBLLqM/EWurs16UK836GtEpVSbOvE/Z5Ev3gvmccfUE9enaV62RmPBNq9SSk0Yqbcn1Ycp/zXtyUdQb/YL0fDCmuxwRlBY3kyc+XsXsczeC7+nckL9Nc/S4sgttc219+fbrzUZsNgDhlGBndGQyzfzIDkE1maIsEiuf2pWZqjZj6uDahf1SwL8BkgJKFD5VTElThS8/81ts3ASqOPlxJpWGrz1S/rbyOwxRueFqvrpl64NNf/9/46uCC7hD+tgQAPAmRbkD8DKuo6TO+T4/1TzTnLB6ZhxJ1QUt5tIEAmppDyqA=="
-                        },
-                        "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1/providers/Microsoft.Resources/deployments/dep-yym--usce",
-                        "name": "dep-yym--usce",
-                        "properties": {
-                            "correlationId": "f7f42e21-adc3-4ed9-94b6-4e5ff7880fa7",
-                            "dependencies": [
-                                {
-                                    "dependsOn": [
-                                        {
-                                            "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1/providers/Microsoft.Web/serverfarms/yymsupercoolsite",
-                                            "resourceName": "yymsupercoolsite",
-                                            "resourceType": "Microsoft.Web/serverfarms"
-                                        }
-                                    ],
-                                    "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1/providers/Microsoft.Web/sites/YYMSuperCoolSite",
-                                    "resourceName": "YYMSuperCoolSite",
-                                    "resourceType": "Microsoft.Web/sites"
-                                },
-                                {
-                                    "dependsOn": [
-                                        {
-                                            "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1/providers/Microsoft.Web/Sites/YYMSuperCoolSite",
-                                            "resourceName": "YYMSuperCoolSite",
-                                            "resourceType": "Microsoft.Web/Sites"
-                                        }
-                                    ],
-                                    "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1/providers/Microsoft.Web/sites/YYMSuperCoolSite/sourcecontrols/web",
-                                    "resourceName": "YYMSuperCoolSite/web",
-                                    "resourceType": "Microsoft.Web/sites/sourcecontrols"
-                                }
-                            ],
-                            "duration": "PT15.1882783S",
-                            "error": {},
-                            "mode": "Complete",
-                            "parameters": {
-                                "branch": {
-                                    "type": "String",
-                                    "value": "main"
-                                },
-                                "hostingPlanName": {
-                                    "type": "String",
-                                    "value": "yymsupercoolsite"
-                                },
-                                "location": {
-                                    "type": "String",
-                                    "value": "centralus"
-                                },
-                                "repoURL": {
-                                    "type": "String",
-                                    "value": "https://github.com/Azure-Samples/azure-event-grid-viewer.git"
-                                },
-                                "siteName": {
-                                    "type": "String",
-                                    "value": "YYMSuperCoolSite"
-                                },
-                                "sku": {
-                                    "type": "String",
-                                    "value": "F1"
-                                }
-                            },
-                            "providers": [
-                                {
-                                    "namespace": "Microsoft.Web",
-                                    "resourceTypes": [
-                                        {
-                                            "locations": [
-                                                "centralus"
-                                            ],
-                                            "resourceType": "serverfarms"
-                                        },
-                                        {
-                                            "locations": [
-                                                "centralus"
-                                            ],
-                                            "resourceType": "sites"
-                                        },
-                                        {
-                                            "locations": [
-                                                null
-                                            ],
-                                            "resourceType": "sites/sourcecontrols"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "provisioningState": "Failed",
-                            "templateHash": "11110332134033812068",
-                            "templateLink": {
-                                "contentVersion": "1.0.0.0",
-                                "uri": "https://raw.githubusercontent.com/Azure-Samples/azure-event-grid-viewer/main/azuredeploy.json"
-                            },
-                            "timestamp": "2025-02-23T18:52:57.7388145Z"
-                        },
-                        "type": "Microsoft.Resources/deployments"
-                    },
-                    "parent": "urn:pulumi:dev::eventgrid-exercise::pulumi:pulumi:Stack::eventgrid-exercise-dev",
-                    "initErrors": [
-                        "GET https://management.azure.com/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourcegroups/rg-yym--usce1/providers/Microsoft.Resources/deployments/dep-yym--usce/operationStatuses/08584612701240097265\n--------------------------------------------------------------------------------\nRESPONSE 200: 200 OK\nERROR CODE: DeploymentFailed\n--------------------------------------------------------------------------------\n{\n  \"status\": \"Failed\",\n  \"error\": {\n    \"code\": \"DeploymentFailed\",\n    \"target\": \"/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1/providers/Microsoft.Resources/deployments/dep-yym--usce\",\n    \"message\": \"At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-deployment-operations for usage details.\",\n    \"details\": [\n      {\n        \"code\": \"BadRequest\",\n        \"target\": \"/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym--usce1/providers/Microsoft.Web/sites/YYMSuperCoolSite/sourcecontrols/web\",\n        \"message\": \"{\\r\\n  \\\"Code\\\": \\\"BadRequest\\\",\\r\\n  \\\"Message\\\": \\\"There was a conflict. Conflict with existing ScmType: ExternalGit\\\",\\r\\n  \\\"Target\\\": null,\\r\\n  \\\"Details\\\": [\\r\\n    {\\r\\n      \\\"Message\\\": \\\"There was a conflict. Conflict with existing ScmType: ExternalGit\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Code\\\": \\\"BadRequest\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"ErrorEntity\\\": {\\r\\n        \\\"ExtendedCode\\\": \\\"01020\\\",\\r\\n        \\\"MessageTemplate\\\": \\\"There was a conflict. {0}\\\",\\r\\n        \\\"Parameters\\\": [\\r\\n          \\\"Conflict with existing ScmType: ExternalGit\\\"\\r\\n        ],\\r\\n        \\\"Code\\\": \\\"BadRequest\\\",\\r\\n        \\\"Message\\\": \\\"There was a conflict. Conflict with existing ScmType: ExternalGit\\\"\\r\\n      }\\r\\n    }\\r\\n  ],\\r\\n  \\\"Innererror\\\": null\\r\\n}\"\n      }\n    ]\n  }\n}\n--------------------------------------------------------------------------------\n"
-                    ],
-                    "provider": "urn:pulumi:dev::eventgrid-exercise::pulumi:providers:azure-native::default_2_88_0::0caabdfb-c61e-460e-9e16-0d0ee786d334",
-                    "propertyDependencies": {
-                        "deploymentName": [],
-                        "properties": [],
-                        "resourceGroupName": []
-                    },
-                    "created": "2025-02-23T18:25:06.259343069Z",
-                    "modified": "2025-02-23T18:53:03.700200344Z"
+                    "type": "deleting"
                 }
             ],
             "metadata": {}
