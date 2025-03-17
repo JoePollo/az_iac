@@ -1,0 +1,36 @@
+{
+    "kind": "destroy",
+    "startTime": 1740340874,
+    "message": "stuff",
+    "environment": {
+        "exec.kind": "cli",
+        "git.author": "yoyomusho",
+        "git.author.email": "jepiii@outlook.com",
+        "git.committer": "yoyomusho",
+        "git.committer.email": "jepiii@outlook.com",
+        "git.dirty": "false",
+        "git.head": "c0f0f378799ecc1f3e5305853a00d3624ab13bc0",
+        "git.headName": "refs/heads/main",
+        "pulumi.arch": "amd64",
+        "pulumi.os": "linux",
+        "pulumi.version": "v3.152.0",
+        "stack.environments": "[]",
+        "updatePlan": "false",
+        "vcs.kind": "github.com",
+        "vcs.owner": "JoePollo",
+        "vcs.repo": "az_iac",
+        "vcs.root": "message-based-solutions"
+    },
+    "config": {
+        "azure-native:location": "centralus",
+        "pulumi:tags": {
+            "pulumi:template": "azure-go"
+        }
+    },
+    "version": 0,
+    "result": "succeeded",
+    "endTime": 1740340924,
+    "resourceChanges": {
+        "delete": 4
+    }
+}

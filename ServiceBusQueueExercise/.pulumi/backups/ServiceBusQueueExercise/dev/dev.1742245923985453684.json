@@ -1,0 +1,198 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/ServiceBusQueueExercise/dev",
+        "latest": {
+            "manifest": {
+                "time": "2025-03-17T16:12:03.957488039-05:00",
+                "magic": "e6f9b63eec1c02224f3d9bb9346dbfaeb256b3b4d71dc3ee7581d37b584369c2",
+                "version": "v3.152.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:Q6l/er83xVU=:v1:nSUk3nQ4Ufn3UG70:vld7Ub9tg+Aoyenwc/scc5VByo6saA=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::ServiceBusQueueExercise::pulumi:pulumi:Stack::ServiceBusQueueExercise-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2025-03-17T21:11:42.872928049Z",
+                    "modified": "2025-03-17T21:11:42.872928049Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::ServiceBusQueueExercise::pulumi:providers:azure-native::default_2_89_1",
+                    "custom": true,
+                    "id": "d36634cc-da71-4527-a201-5f129e553bec",
+                    "type": "pulumi:providers:azure-native",
+                    "inputs": {
+                        "__internal": {},
+                        "location": "centralus",
+                        "version": "2.89.1"
+                    },
+                    "outputs": {
+                        "location": "centralus",
+                        "version": "2.89.1"
+                    },
+                    "created": "2025-03-17T21:11:42.87510646Z",
+                    "modified": "2025-03-17T21:11:42.87510646Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::ServiceBusQueueExercise::azure-native:resources:ResourceGroup::rg-yym-dev-usce",
+                    "custom": true,
+                    "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce",
+                    "type": "azure-native:resources:ResourceGroup",
+                    "inputs": {
+                        "location": "centralus",
+                        "resourceGroupName": "rg-yym-dev-usce"
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:BPtE7w3ErETmjRBh:LK7POFfvdnxD0ksy/zh3fA0PT5/c+lrDCGISTU/iDxQK4V1VmVbeKJAQFXlk520vELzR1UqPu/GOX5WscdDyJmS7TZGPvwiXCgfiMmcm"
+                        },
+                        "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce",
+                        "location": "centralus",
+                        "name": "rg-yym-dev-usce",
+                        "properties": {
+                            "provisioningState": "Succeeded"
+                        },
+                        "type": "Microsoft.Resources/resourceGroups"
+                    },
+                    "parent": "urn:pulumi:dev::ServiceBusQueueExercise::pulumi:pulumi:Stack::ServiceBusQueueExercise-dev",
+                    "provider": "urn:pulumi:dev::ServiceBusQueueExercise::pulumi:providers:azure-native::default_2_89_1::d36634cc-da71-4527-a201-5f129e553bec",
+                    "propertyDependencies": {
+                        "location": [],
+                        "resourceGroupName": []
+                    },
+                    "created": "2025-03-17T21:11:47.150384514Z",
+                    "modified": "2025-03-17T21:11:47.150384514Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::ServiceBusQueueExercise::azure-native:servicebus:Namespace::sbns-yym-dev-usce",
+                    "custom": true,
+                    "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce/providers/Microsoft.ServiceBus/namespaces/sbns-yym-dev-usce",
+                    "type": "azure-native:servicebus:Namespace",
+                    "inputs": {
+                        "location": "centralus",
+                        "namespaceName": "sbns-yym-dev-usce",
+                        "publicNetworkAccess": "Enabled",
+                        "resourceGroupName": "rg-yym-dev-usce",
+                        "sku": {
+                            "name": "Basic",
+                            "tier": "Basic"
+                        }
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:BE3Q9RaRVXFPpyx3:Yxf4CB3Pl91w5uSUY8AHZ9SBqNUznkdYu5L4zJ1YQemhGzzgpY0E2GXP9FMJGZly9ueX6Os87o8KlxioHNF7IAqFL89lR/3k2iy4XU6W0CJ8AdY6ViTGXvZmuFdlqyOPIkLYxx6jGAnIiM7kWJN4y6OWhLm/D/FODpMKYUv5Byt82R4Z5Tla8Z6VUSA/NGCOFO6brXsP06L8UVBeyUHrASkpFYkYyl4j8jQNaP4aaAhhfk5YbC76jQ=="
+                        },
+                        "createdAt": "2025-03-16T20:53:14.88681Z",
+                        "disableLocalAuth": false,
+                        "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce/providers/Microsoft.ServiceBus/namespaces/sbns-yym-dev-usce",
+                        "location": "centralus",
+                        "metricId": "92df2926-1459-4a8c-86ba-90f6d6671aec:sbns-yym-dev-usce",
+                        "minimumTlsVersion": "1.2",
+                        "name": "sbns-yym-dev-usce",
+                        "provisioningState": "Succeeded",
+                        "publicNetworkAccess": "Enabled",
+                        "serviceBusEndpoint": "https://sbns-yym-dev-usce.servicebus.windows.net:443/",
+                        "sku": {
+                            "name": "Basic",
+                            "tier": "Basic"
+                        },
+                        "status": "Active",
+                        "tags": {},
+                        "type": "Microsoft.ServiceBus/Namespaces",
+                        "updatedAt": "2025-03-17T21:11:53Z",
+                        "zoneRedundant": true
+                    },
+                    "parent": "urn:pulumi:dev::ServiceBusQueueExercise::pulumi:pulumi:Stack::ServiceBusQueueExercise-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::ServiceBusQueueExercise::azure-native:resources:ResourceGroup::rg-yym-dev-usce"
+                    ],
+                    "provider": "urn:pulumi:dev::ServiceBusQueueExercise::pulumi:providers:azure-native::default_2_89_1::d36634cc-da71-4527-a201-5f129e553bec",
+                    "propertyDependencies": {
+                        "location": [],
+                        "namespaceName": [],
+                        "publicNetworkAccess": [],
+                        "resourceGroupName": [
+                            "urn:pulumi:dev::ServiceBusQueueExercise::azure-native:resources:ResourceGroup::rg-yym-dev-usce"
+                        ],
+                        "sku": []
+                    },
+                    "created": "2025-03-17T21:11:59.845704644Z",
+                    "modified": "2025-03-17T21:11:59.845704644Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::ServiceBusQueueExercise::azure-native:servicebus:Queue::sbq-yym-dev-usce",
+                    "custom": true,
+                    "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce/providers/Microsoft.ServiceBus/namespaces/sbns-yym-dev-usce/queues/sbq-yym-dev-usce",
+                    "type": "azure-native:servicebus:Queue",
+                    "inputs": {
+                        "namespaceName": "sbns-yym-dev-usce",
+                        "queueName": "sbq-yym-dev-usce",
+                        "resourceGroupName": "rg-yym-dev-usce"
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:oxMe0cwnU0h27WF8:dJcgHKaGo7RYGScJAyn/P7jYgOyjoTa9B4DzOPNGZZgU0wyAYm/WnoSuYWKa7S8F5bUmYkJbCaMdD6pWUQfy3qp3PDw2ah+gD1A2d0n88uKYuFgQVQTyrWp/ux5pZBvjKsY5fhRfOOyZRltw377WBjbyKBjOQyEZ+7M="
+                        },
+                        "accessedAt": "0001-01-01T00:00:00Z",
+                        "autoDeleteOnIdle": "P10675199DT2H48M5.4775807S",
+                        "countDetails": {
+                            "activeMessageCount": 0,
+                            "deadLetterMessageCount": 0,
+                            "scheduledMessageCount": 0,
+                            "transferDeadLetterMessageCount": 0,
+                            "transferMessageCount": 0
+                        },
+                        "createdAt": "2025-03-17T21:12:02.41Z",
+                        "deadLetteringOnMessageExpiration": false,
+                        "defaultMessageTimeToLive": "P14D",
+                        "duplicateDetectionHistoryTimeWindow": "PT10M",
+                        "enableBatchedOperations": true,
+                        "enableExpress": false,
+                        "enablePartitioning": false,
+                        "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce/providers/Microsoft.ServiceBus/namespaces/sbns-yym-dev-usce/queues/sbq-yym-dev-usce",
+                        "location": "centralus",
+                        "lockDuration": "PT1M",
+                        "maxDeliveryCount": 10,
+                        "maxMessageSizeInKilobytes": 256,
+                        "maxSizeInMegabytes": 1024,
+                        "messageCount": 0,
+                        "name": "sbq-yym-dev-usce",
+                        "requiresDuplicateDetection": false,
+                        "requiresSession": false,
+                        "sizeInBytes": 0,
+                        "status": "Active",
+                        "type": "Microsoft.ServiceBus/namespaces/queues",
+                        "updatedAt": "2025-03-17T21:12:02.56Z"
+                    },
+                    "parent": "urn:pulumi:dev::ServiceBusQueueExercise::pulumi:pulumi:Stack::ServiceBusQueueExercise-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::ServiceBusQueueExercise::azure-native:resources:ResourceGroup::rg-yym-dev-usce",
+                        "urn:pulumi:dev::ServiceBusQueueExercise::azure-native:servicebus:Namespace::sbns-yym-dev-usce"
+                    ],
+                    "provider": "urn:pulumi:dev::ServiceBusQueueExercise::pulumi:providers:azure-native::default_2_89_1::d36634cc-da71-4527-a201-5f129e553bec",
+                    "propertyDependencies": {
+                        "namespaceName": [
+                            "urn:pulumi:dev::ServiceBusQueueExercise::azure-native:servicebus:Namespace::sbns-yym-dev-usce"
+                        ],
+                        "queueName": [],
+                        "resourceGroupName": [
+                            "urn:pulumi:dev::ServiceBusQueueExercise::azure-native:resources:ResourceGroup::rg-yym-dev-usce"
+                        ]
+                    },
+                    "created": "2025-03-17T21:12:03.25206199Z",
+                    "modified": "2025-03-17T21:12:03.25206199Z"
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}

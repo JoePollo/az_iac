@@ -1,17 +1,17 @@
 {
     "version": 3,
     "checkpoint": {
-        "stack": "organization/message-based-solutions/dev",
+        "stack": "organization/ServiceBusQueueExercise/dev",
         "latest": {
             "manifest": {
-                "time": "2025-02-23T14:02:04.091241909-06:00",
+                "time": "2025-03-17T16:35:44.429180243-05:00",
                 "magic": "e6f9b63eec1c02224f3d9bb9346dbfaeb256b3b4d71dc3ee7581d37b584369c2",
                 "version": "v3.152.0"
             },
             "secrets_providers": {
                 "type": "passphrase",
                 "state": {
-                    "salt": "v1:2N1JDXuEaiM=:v1:LYkRJe7aY0n0VNQG:PtFe8xmHjUi5qxpUe8t/R6uJuAvvOw=="
+                    "salt": "v1:Q6l/er83xVU=:v1:nSUk3nQ4Ufn3UG70:vld7Ub9tg+Aoyenwc/scc5VByo6saA=="
                 }
             },
             "metadata": {}
