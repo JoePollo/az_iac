@@ -1,0 +1,202 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/StorageQueueExercise/dev",
+        "latest": {
+            "manifest": {
+                "time": "2025-03-17T16:57:48.163712506-05:00",
+                "magic": "e6f9b63eec1c02224f3d9bb9346dbfaeb256b3b4d71dc3ee7581d37b584369c2",
+                "version": "v3.152.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:lwEBuse9Ids=:v1:EpFB4zoIygQ5SRKC:evgk1Z49j+MALugWDFwByb5v0LQrVg=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::StorageQueueExercise::pulumi:pulumi:Stack::StorageQueueExercise-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2025-03-17T21:57:24.251322735Z",
+                    "modified": "2025-03-17T21:57:24.251322735Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::StorageQueueExercise::pulumi:providers:azure-native::default_2_42_1",
+                    "custom": true,
+                    "id": "85dced8a-a627-42b8-baf0-6330b8ab7a17",
+                    "type": "pulumi:providers:azure-native",
+                    "inputs": {
+                        "__internal": {},
+                        "location": "centralus",
+                        "version": "2.42.1"
+                    },
+                    "outputs": {
+                        "location": "centralus",
+                        "version": "2.42.1"
+                    },
+                    "created": "2025-03-17T21:57:24.391458758Z",
+                    "modified": "2025-03-17T21:57:24.391458758Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::StorageQueueExercise::azure-native:resources:ResourceGroup::rg-yym-dev-usce",
+                    "custom": true,
+                    "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce594b0ed1",
+                    "type": "azure-native:resources:ResourceGroup",
+                    "inputs": {
+                        "__createBeforeDelete": true,
+                        "location": "centralus",
+                        "resourceGroupName": "rg-yym-dev-usce594b0ed1"
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:hU9M2Ff1JcW2sCYH:nSGITe+43XtDWocziix1An+a5xN6mYsll0RkTFC/3KIHmgubSwW6N6vuqilHAFTWuIbb1OZKS1qK7YIHfn+UbZtB/u6tvCaRTfHGFhiwXnyXpv9ea14dvsK5NWiS+Q4ol49HZEgw9TSl030zMz9OtGXE"
+                        },
+                        "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce594b0ed1",
+                        "location": "centralus",
+                        "name": "rg-yym-dev-usce594b0ed1",
+                        "properties": {
+                            "provisioningState": "Succeeded"
+                        },
+                        "type": "Microsoft.Resources/resourceGroups"
+                    },
+                    "parent": "urn:pulumi:dev::StorageQueueExercise::pulumi:pulumi:Stack::StorageQueueExercise-dev",
+                    "provider": "urn:pulumi:dev::StorageQueueExercise::pulumi:providers:azure-native::default_2_42_1::85dced8a-a627-42b8-baf0-6330b8ab7a17",
+                    "created": "2025-03-17T21:57:26.71619539Z",
+                    "modified": "2025-03-17T21:57:26.71619539Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::StorageQueueExercise::azure-native:storage:StorageAccount::styymdevusce",
+                    "custom": true,
+                    "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce594b0ed1/providers/Microsoft.Storage/storageAccounts/styymdevuscedbddf7fa",
+                    "type": "azure-native:storage:StorageAccount",
+                    "inputs": {
+                        "__createBeforeDelete": true,
+                        "accountName": "styymdevuscedbddf7fa",
+                        "kind": "StorageV2",
+                        "location": "centralus",
+                        "resourceGroupName": "rg-yym-dev-usce594b0ed1",
+                        "sku": {
+                            "name": "Standard_LRS"
+                        }
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:fviwHSEq0LBuwhsb:A7WXTR4o0s+t9ox13gEl+KNJ0m4vQRvww1dp2Ev8y1oRTjMatC2kTHV1XJb3HSYFM4fKx27iv0BKs6WCKVfWDGmiSDcQwm2hhVvE1AJAmpVirGYF2oy2/hB3+m68oQIpOv0qei2tTNsE3GwGdE3NO+/SGE0KXAFuQpLtOg18WV04JkTPmi5Zx5Ayh4bINjpLzRmgIhkcZ0LhgELx9oJ3l50wMIoM2EGCFXO6KeUChC6vSpz5tNYCIBmUfQNiyShH6B0YlQX+DU8="
+                        },
+                        "accessTier": "Hot",
+                        "allowBlobPublicAccess": false,
+                        "allowCrossTenantReplication": false,
+                        "creationTime": "2025-03-17T21:57:27.3265716Z",
+                        "enableHttpsTrafficOnly": true,
+                        "encryption": {
+                            "keySource": "Microsoft.Storage",
+                            "services": {
+                                "blob": {
+                                    "enabled": true,
+                                    "keyType": "Account",
+                                    "lastEnabledTime": "2025-03-17T21:57:27.4671949Z"
+                                },
+                                "file": {
+                                    "enabled": true,
+                                    "keyType": "Account",
+                                    "lastEnabledTime": "2025-03-17T21:57:27.4671949Z"
+                                }
+                            }
+                        },
+                        "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce594b0ed1/providers/Microsoft.Storage/storageAccounts/styymdevuscedbddf7fa",
+                        "keyCreationTime": {
+                            "key1": "2025-03-17T21:57:27.4671949Z",
+                            "key2": "2025-03-17T21:57:27.4671949Z"
+                        },
+                        "kind": "StorageV2",
+                        "location": "centralus",
+                        "minimumTlsVersion": "TLS1_0",
+                        "name": "styymdevuscedbddf7fa",
+                        "networkRuleSet": {
+                            "bypass": "AzureServices",
+                            "defaultAction": "Allow",
+                            "ipRules": [],
+                            "virtualNetworkRules": []
+                        },
+                        "primaryEndpoints": {
+                            "blob": "https://styymdevuscedbddf7fa.blob.core.windows.net/",
+                            "dfs": "https://styymdevuscedbddf7fa.dfs.core.windows.net/",
+                            "file": "https://styymdevuscedbddf7fa.file.core.windows.net/",
+                            "queue": "https://styymdevuscedbddf7fa.queue.core.windows.net/",
+                            "table": "https://styymdevuscedbddf7fa.table.core.windows.net/",
+                            "web": "https://styymdevuscedbddf7fa.z19.web.core.windows.net/"
+                        },
+                        "primaryLocation": "centralus",
+                        "privateEndpointConnections": [],
+                        "provisioningState": "Succeeded",
+                        "sku": {
+                            "name": "Standard_LRS",
+                            "tier": "Standard"
+                        },
+                        "statusOfPrimary": "available",
+                        "tags": {},
+                        "type": "Microsoft.Storage/storageAccounts"
+                    },
+                    "parent": "urn:pulumi:dev::StorageQueueExercise::pulumi:pulumi:Stack::StorageQueueExercise-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::StorageQueueExercise::azure-native:resources:ResourceGroup::rg-yym-dev-usce"
+                    ],
+                    "provider": "urn:pulumi:dev::StorageQueueExercise::pulumi:providers:azure-native::default_2_42_1::85dced8a-a627-42b8-baf0-6330b8ab7a17",
+                    "propertyDependencies": {
+                        "kind": [],
+                        "resourceGroupName": [
+                            "urn:pulumi:dev::StorageQueueExercise::azure-native:resources:ResourceGroup::rg-yym-dev-usce"
+                        ],
+                        "sku": []
+                    },
+                    "created": "2025-03-17T21:57:47.227572183Z",
+                    "modified": "2025-03-17T21:57:47.227572183Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::StorageQueueExercise::azure-native:storage:Queue::stq-yym-dev-usce",
+                    "custom": true,
+                    "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce594b0ed1/providers/Microsoft.Storage/storageAccounts/styymdevuscedbddf7fa/queueServices/default/queues/stq-yym-dev-usce",
+                    "type": "azure-native:storage:Queue",
+                    "inputs": {
+                        "accountName": "styymdevuscedbddf7fa",
+                        "queueName": "stq-yym-dev-usce",
+                        "resourceGroupName": "rg-yym-dev-usce594b0ed1"
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:LXdT4tTxlbl5yPGP:pGz0+r0uiZjvMdzqNfvpZWedBTYzIE21NAvanyVS3u3UAWoiLYFF2Qan7fEmWlaSMAnWIyr46QpG7VMEnkxJiUlewCv8JT87/TTON+zlCf1gbDhVE2TAMwoRceZqI0kieuKNkTn3gbDomzAGNA8RoNwWT6VsR2O6f56grv3EkWFZOFE="
+                        },
+                        "approximateMessageCount": 0,
+                        "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce594b0ed1/providers/Microsoft.Storage/storageAccounts/styymdevuscedbddf7fa/queueServices/default/queues/stq-yym-dev-usce",
+                        "metadata": {},
+                        "name": "stq-yym-dev-usce",
+                        "type": "Microsoft.Storage/storageAccounts/queueServices/queues"
+                    },
+                    "parent": "urn:pulumi:dev::StorageQueueExercise::pulumi:pulumi:Stack::StorageQueueExercise-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::StorageQueueExercise::azure-native:resources:ResourceGroup::rg-yym-dev-usce",
+                        "urn:pulumi:dev::StorageQueueExercise::azure-native:storage:StorageAccount::styymdevusce"
+                    ],
+                    "provider": "urn:pulumi:dev::StorageQueueExercise::pulumi:providers:azure-native::default_2_42_1::85dced8a-a627-42b8-baf0-6330b8ab7a17",
+                    "propertyDependencies": {
+                        "accountName": [
+                            "urn:pulumi:dev::StorageQueueExercise::azure-native:storage:StorageAccount::styymdevusce"
+                        ],
+                        "queueName": [],
+                        "resourceGroupName": [
+                            "urn:pulumi:dev::StorageQueueExercise::azure-native:resources:ResourceGroup::rg-yym-dev-usce"
+                        ]
+                    },
+                    "created": "2025-03-17T21:57:48.130498306Z",
+                    "modified": "2025-03-17T21:57:48.130498306Z"
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}

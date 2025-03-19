@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/StorageQueueExercise/dev",
+        "latest": {
+            "manifest": {
+                "time": "2025-03-17T16:58:20.511422217-05:00",
+                "magic": "e6f9b63eec1c02224f3d9bb9346dbfaeb256b3b4d71dc3ee7581d37b584369c2",
+                "version": "v3.152.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:lwEBuse9Ids=:v1:EpFB4zoIygQ5SRKC:evgk1Z49j+MALugWDFwByb5v0LQrVg=="
+                }
+            },
+            "metadata": {}
+        }
+    }
+}
