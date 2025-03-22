@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/ExerciseAzureRedis/dev",
+        "latest": {
+            "manifest": {
+                "time": "2025-03-22T13:49:09.137434223-05:00",
+                "magic": "e6f9b63eec1c02224f3d9bb9346dbfaeb256b3b4d71dc3ee7581d37b584369c2",
+                "version": "v3.152.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:HoswRTfS5ic=:v1:vmqBHDr1+gE+eoJv:o7ofSDTFXgqyJNaD5if7GL9P4o7H6A=="
+                }
+            },
+            "metadata": {}
+        }
+    }
+}

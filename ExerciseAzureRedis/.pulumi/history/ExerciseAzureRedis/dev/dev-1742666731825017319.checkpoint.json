@@ -1,0 +1,78 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/ExerciseAzureRedis/dev",
+        "latest": {
+            "manifest": {
+                "time": "2025-03-22T13:05:31.823827036-05:00",
+                "magic": "e6f9b63eec1c02224f3d9bb9346dbfaeb256b3b4d71dc3ee7581d37b584369c2",
+                "version": "v3.152.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:HoswRTfS5ic=:v1:vmqBHDr1+gE+eoJv:o7ofSDTFXgqyJNaD5if7GL9P4o7H6A=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::ExerciseAzureRedis::pulumi:pulumi:Stack::ExerciseAzureRedis-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2025-03-22T18:03:06.091994126Z",
+                    "modified": "2025-03-22T18:03:06.091994126Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::ExerciseAzureRedis::pulumi:providers:azure-native::default_2_89_3",
+                    "custom": true,
+                    "id": "6adb6273-b6bb-40ae-91d3-5e8f4bf2aab8",
+                    "type": "pulumi:providers:azure-native",
+                    "inputs": {
+                        "__internal": {},
+                        "location": "centralus",
+                        "version": "2.89.3"
+                    },
+                    "outputs": {
+                        "location": "centralus",
+                        "version": "2.89.3"
+                    },
+                    "created": "2025-03-22T18:03:06.307605024Z",
+                    "modified": "2025-03-22T18:03:06.307605024Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::ExerciseAzureRedis::azure-native:resources:ResourceGroup::rg-yym-dev-usce1",
+                    "custom": true,
+                    "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce1",
+                    "type": "azure-native:resources:ResourceGroup",
+                    "inputs": {
+                        "location": "centralus",
+                        "resourceGroupName": "rg-yym-dev-usce1"
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:HFT4zVdCaS3HWGnJ:lnQ8wheF8vUVFnTuKD9aFsneO1QAa6IVS6mjmxb3bhzzyzYL4o/tiJiN+gZoyjFl6AYJpk+ukEy4/GDtZceGtJK1/MjCTyJ5Y4jxgL56tg=="
+                        },
+                        "azureApiVersion": "2022-09-01",
+                        "id": "/subscriptions/92df2926-1459-4a8c-86ba-90f6d6671aec/resourceGroups/rg-yym-dev-usce1",
+                        "location": "centralus",
+                        "name": "rg-yym-dev-usce1",
+                        "properties": {
+                            "provisioningState": "Succeeded"
+                        },
+                        "type": "Microsoft.Resources/resourceGroups"
+                    },
+                    "parent": "urn:pulumi:dev::ExerciseAzureRedis::pulumi:pulumi:Stack::ExerciseAzureRedis-dev",
+                    "provider": "urn:pulumi:dev::ExerciseAzureRedis::pulumi:providers:azure-native::default_2_89_3::6adb6273-b6bb-40ae-91d3-5e8f4bf2aab8",
+                    "propertyDependencies": {
+                        "location": [],
+                        "resourceGroupName": []
+                    },
+                    "created": "2025-03-22T18:03:09.462651341Z",
+                    "modified": "2025-03-22T18:03:09.462651341Z"
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}

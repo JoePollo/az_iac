@@ -1,0 +1,37 @@
+{
+    "kind": "refresh",
+    "startTime": 1742667168,
+    "message": "stuff",
+    "environment": {
+        "exec.kind": "cli",
+        "git.author": "yoyomusho",
+        "git.author.email": "jepiii@outlook.com",
+        "git.committer": "yoyomusho",
+        "git.committer.email": "jepiii@outlook.com",
+        "git.dirty": "true",
+        "git.head": "1ad174f07a1bccde2a1dbae566cb8bc160dc611f",
+        "git.headName": "refs/heads/main",
+        "pulumi.arch": "amd64",
+        "pulumi.os": "linux",
+        "pulumi.version": "v3.152.0",
+        "stack.environments": "[]",
+        "updatePlan": "false",
+        "vcs.kind": "github.com",
+        "vcs.owner": "JoePollo",
+        "vcs.repo": "az_iac",
+        "vcs.root": "ExerciseAzureRedis"
+    },
+    "config": {
+        "azure-native:location": "centralus",
+        "pulumi:tags": {
+            "pulumi:template": "azure-go"
+        }
+    },
+    "version": 0,
+    "result": "succeeded",
+    "endTime": 1742667170,
+    "resourceChanges": {
+        "same": 2,
+        "update": 1
+    }
+}
